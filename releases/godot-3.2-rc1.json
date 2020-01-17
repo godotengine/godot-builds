@@ -1,0 +1,10 @@
+{
+    "name": "3.2-rc1",
+    "version": "3.2",
+    "status": "rc1",
+    "release_date": 1579246353,
+    "git_reference": "ba7aca4199019529dec60555a5ff005f6692d281",
+
+    "files": [
+    ]
+}
