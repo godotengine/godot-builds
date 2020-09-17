@@ -1,0 +1,90 @@
+{
+    "name": "3.2.3",
+    "version": "3.2.3",
+    "status": "stable",
+    "release_date": 1600326572,
+    "git_reference": "3.2.3-stable",
+
+    "files": [
+        {
+            "filename": "godot-3.2.3-stable.tar.xz",
+            "checksum": "8374a46a449a24c0a928f00aa6b20334e26c2aae543593c9a9bb9fd28d089b035c36c0a1953a37589eb80a9f0d4d359c0f6a887f0c68650b5f316ccbc45c9319"
+        },
+        {
+            "filename": "godot-3.2.3-stable.tar.xz.sha256",
+            "checksum": "b1621f42d55de1cfdee9a88ed88bd0dd2ed81472ccb024703b7261ab411a24f9dd314bcbcb59afd243a268f395e4c4ba46064aebc901966b0fc03ed1fe6f9ca1"
+        },
+        {
+            "filename": "godot-lib.3.2.3.stable.release.aar",
+            "checksum": "1801eebb44d2d766b155895c3b181ee8681adf471b5ef54a78d82763a18f72deb118bde6487c7e2c5aed03a0dbe8447bd878eee145f611be6a168f5539fa5a78"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_export_templates.tpz",
+            "checksum": "55d87b56fb9672f8990bbaf0870332f89d6b5e3fae28f93d77905f859ce5b08ed6a31314b3667490bc4213bb96748e2756f45d8b6f1eb6827b1613800220ffa3"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_linux_headless.64.zip",
+            "checksum": "4bd9f9005d32040a9c2b2addd02a5bf3797d0eee1e27a783015ee27143915f4d3e8765e84e05310da0dcbef392bb25e09973dcdc83608d8d1aeb3c573b98c6a0"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_linux_server.64.zip",
+            "checksum": "71276751d892f7702e1ca68a85974a44f5b8162c56bb1bea3fafb731e6f193d18568e5e6a2057ca453432b26fc04da8491fb65acce74ffe068ad84cfceee5bcd"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_osx.64.zip",
+            "checksum": "be635a5037e9de5d99b29971ffdda3629b7a6ae005c9e51768486bb4302abe49dbdf73d8221c0e0f10bbce13a3d13825f05707738e23377b45e2e4c69b842e81"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_win32.exe.zip",
+            "checksum": "9ca661d17dcd9b1437ce393976911ecffb9a7f2f310d711c523022e7e5b9fba1409819ed9246dc5f66484d8f4f58b0b93c61dbc28c58a72104370bc0a3bf0070"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_win64.exe.zip",
+            "checksum": "73e8376f2b1e6b884c4604bd6df30a8aea73975fa53d8a8d2f8d62c8cda6d3b73d00bb2868a91635cd8c79a78f50cde262fd3c325bdb9488cb16a7f1c231dd16"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_x11.32.zip",
+            "checksum": "ec558e808dd2d92ab35f13c0988d0cd01b3d701ca2872ca4a05132f4240f4a6f738b5d489f766014e5e2914b2b7dc9dc47920090ad8a0e9a25006baaebda6096"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_x11.64.zip",
+            "checksum": "6470300d1b9c970f9ca07c6318f56cd18a1a29e89a6f464ef93b235bca128ecb08f1b7442b05c83a53ccc7d4c2bd60790965bc610e4bd7ed1b35281eda7995fe"
+        },
+        {
+            "filename": "godot-lib.3.2.3.stable.mono.release.aar",
+            "checksum": "436a2a616c5100b87880aa3162b037ee218532e35372025620a3d25b0ad2a39ffb9cc6f5b954446a9607447d9d13a669ad54101902679ae2c640a63c320f60b5"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_export_templates.tpz",
+            "checksum": "1de5a38301b383908d7f7d538e3d6c69448175613a21b8814355d1f9eb4b35ea5d81ea4b2935b72c6e2afbd19b5f8f2bf0bfd952f8b839c98c7b056dd9d10d9b"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_linux_headless_64.zip",
+            "checksum": "a3aafffc362dcd40924e33fcd8ff6f1e1603eb4e1ec5ce7259da339c18a6ad19d3ee6b43fe6ca06f3cc0d7c80faccfb36f45368319481794733b04a91ce53de8"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_linux_server_64.zip",
+            "checksum": "bcbe9ac0036de2d9bfb74abdb97f154eddb5a529ce7da505e8213aeb4cd22b42ca81374a0cff72fc3dff77a73ab9200eb2272bdc5cbfd8408ff921cdeece5775"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_osx.64.zip",
+            "checksum": "be1830ef273cdad087dbaa3a3c8ee55c0819aa06cf01ecc1f3fa28cc7a0bd9e889fac4a5b2be674284e35f3e34bce3fa637a2d1caa557a18b13cc8290040bbff"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_win32.zip",
+            "checksum": "7e6313ed70c8273c4c867bd26f4c47463d714c56e0df615fcbaf23c6215c9d26fce43e38d2b6a9d5b78eadffcc392b946354aa17dd9341be381bd87d73799e37"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_win64.zip",
+            "checksum": "4b9cad3d40ce9c1dcef37aa93f19c3e012cff0e3aa864431d7a6df468598165f5c54b5317ecf9dfed22fbb578acaf7b20501b7a698e048df6019816827fc36b8"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_x11_32.zip",
+            "checksum": "0705a6070c8ce434f60e4362e8d6543ea5bc5196d14090967b412031ac3d8b77ab1b5b6826ce89caf6457ae45d81c600f1d4fd265cbca96642e685ab309c4376"
+        },
+        {
+            "filename": "Godot_v3.2.3-stable_mono_x11_64.zip",
+            "checksum": "c5e032ec285a2c6cd014545bb3619346713b23333a417cf36864702f8b091272e92b6e2e8d7ce990a0e651aa3a911a12c3534ac891347418def15dff5a0bb3e2"
+        }
+    ]
+}
