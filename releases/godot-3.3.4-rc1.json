@@ -1,0 +1,94 @@
+{
+    "name": "3.3.4-rc1",
+    "version": "3.3.4",
+    "status": "rc1",
+    "release_date": 1632928171,
+    "git_reference": "74cf62bb68afff6374f6ce4b1a7f5a198ed129d3",
+
+    "files": [
+        {
+            "filename": "godot-3.3.4-rc1.tar.xz",
+            "checksum": "450749b7c7e0f8e1cc61daffbc04f9ddb06136f7e7c477f3562c4bf1d6607fdd8f1bc12441f0e1a6115162f66ca815e3aeb4f58a753923cf279eaffe1e7a8dc3"
+        },
+        {
+            "filename": "godot-3.3.4-rc1.tar.xz.sha256",
+            "checksum": "b9a05ca7aea1f8de195fc10c414934a035e28047a7c988190b5b97ff46424f5494a9e256b89ed6c63331bb1ec64ca2a6f5b9c4138fc85259957b658c1941dfe6"
+        },
+        {
+            "filename": "godot-lib.3.3.4.rc1.release.aar",
+            "checksum": "c1ed92d1e80c66b78f74f6eebfb9894e6fac9367e55aca9543d9b537b5835e732c9733b62ff2ffd62182b35d6ad00cc67bf6a7d74eee921055b9eb5f8426079d"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_export_templates.tpz",
+            "checksum": "97399236335a05a9b608b7e0ec525538e4d6eddcc20bea5875436d14c67c723c7a7832ba1b3b780dab427685c1d1ffe5eda91e6b4761b0e883e18c8fe2c38f4b"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_linux_headless.64.zip",
+            "checksum": "b86aabc9da645bae1012a1403602b3952b6ef7b83b1882d7271a2d3346d5114fff130362ccc5078026a535cff210b297bf779e4908f93ed01d2953a8c81ad401"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_linux_server.64.zip",
+            "checksum": "5310230d8e1480ce7cafce0f7cc41e9165c75b68864339803b51f03b838c7cccd33d1adda6c4b2951873183a902aa640951a599488922484b47dd2e4ea7f7573"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_osx.universal.zip",
+            "checksum": "9958fe6950a6d275390b70cc76c21d48471fca64120e1f6a3181806f5be1fa3989dda0374e2c4f88dac264c8b3ab5bb942ae085fb9f798e88f1c5c0380c0d41a"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_web_editor.zip",
+            "checksum": "388b28730e46bf76529180e581eff582637a27ff507936aca8b4e17bc9e84e8898630a03b4fbd8506900c7205e52ef0f98c82f2b1a769a572630db2e6c054e2d"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_win32.exe.zip",
+            "checksum": "0fa0e81babcd1d517f87340c91979c82041b789b5cd4ae1fdf15edb328aa01a05adc87e269272db3f6c7f9440f3db8c603970d83717fc5c69b23a954c29de49a"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_win64.exe.zip",
+            "checksum": "72e81445c22577535c987e4b4af35a1750cb349bdcd75acc7fae6bbede86af02634103aaba7a23d927bc05f8414671cec13ab4f4a738d9a3be2bb1984f3b8c8e"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_x11.32.zip",
+            "checksum": "6ada95d2c7de4971f24b939e49ddb2196082b00c84aa7eb7267afadbcb3eb7fa7e2c70c137c385710aff17b42f24d013d211f30a2463025b01904d7c8d05b00d"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_x11.64.zip",
+            "checksum": "469dde84b7ae48cca377874d6e9033e151ce27581432c803c48a1fd71002e44133befb8357485b454f48d21e39859b6f10afce75c42a8832dfe5e7d852af3aff"
+        },
+        {
+            "filename": "godot-lib.3.3.4.rc1.mono.release.aar",
+            "checksum": "72b7b25e553d5b66dfa58950ea91e98e6bff847ff2826ccb52dcb09f3cbab5610b88def75f3a556666444eee8a1202ee18bd6364c5a71a275852f724f25d93d0"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_export_templates.tpz",
+            "checksum": "2eafd674e8e55038dee5220e1641996fe55f350c300e32040625cc549f00de797215abfdb6910ccf85dc7e8a3a0a0a2647c8c403aca5cff86f8229a63af4053f"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_linux_headless_64.zip",
+            "checksum": "48e64f4b32128b527ea0503431edced9a7455c35a2405abc09a98b348ae17eb2496499762106085eb45919cf97dbb4779e020d59c555f75f4eb2589f50152a79"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_linux_server_64.zip",
+            "checksum": "6f8d8a0ab0fd3caf3a82f9c2280392b9da50292a1a1866350ed0a779239496e58c9d3423bfdfd5ff4254b5d476d4f7b544a02c3d83589a360db787c693c8844f"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_osx.64.zip",
+            "checksum": "4a8861d43ceee3ee91f15ff0fcab710e0fa387b238d5fe7d83fc53b1bf39a09c2b83bc3f1c7ff61e3fa1a146c183d7058cae2652191ea16418c341ee4732686a"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_win32.zip",
+            "checksum": "00bb2cd716f37457be57eadf6c63ff04b55e3c0899bc4fcd6cfc6595258a9a5aef251fb262f83f1072182ab2296848d41ef33bf9d30b40316064a2bf261b98d0"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_win64.zip",
+            "checksum": "ffacea7607f4b0a24f799c4f282d3f8556d787e0812dece38b1ed21c4226edcb3488b49147ddf31b736de6fd839c32535c8d58514d5814193bca14a9913074ca"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_x11_32.zip",
+            "checksum": "00ca547f08674180bdf8aa2b0dcde38488b982e76c184fcc1cc0a47189d73442fc60c54a8344ef3b6ed16dcbd9f536e56216ad2b3fa62605070f7f6ebf33bc10"
+        },
+        {
+            "filename": "Godot_v3.3.4-rc1_mono_x11_64.zip",
+            "checksum": "af507a1edb9d212f513e940a8222109c9e85b12368354435814c20e39e5717e6392f66081f1064ec93f1d8d00d70acf1de54714476959b3c65384f53d98f43a9"
+        }
+    ]
+}
