@@ -1,0 +1,46 @@
+{
+    "name": "4.0-alpha2",
+    "version": "4.0",
+    "status": "alpha2",
+    "release_date": 1644415014,
+    "git_reference": "79077e6c10db9e8e53a8134f72e326f3ffb9c51c",
+
+    "files": [
+        {
+            "filename": "godot-4.0-alpha2.tar.xz",
+            "checksum": "defbb12fb127f638e9cedbea721b758638ae116cbb1c8539df2322d54d1672620422733d5df3690dfbdc95cf36ce1fced59d095d45daac7d4578ea814a775b43"
+        },
+        {
+            "filename": "godot-4.0-alpha2.tar.xz.sha256",
+            "checksum": "7585d6fb724e975cbd066958c6668bcce6d67f98450befac3e4b4c107e734a7b029cbe2afec7afad26f2e5e6034ac7290157a0543f0c0aa7cc37cc0b204b8a7a"
+        },
+        {
+            "filename": "godot-lib.4.0.alpha2.release.aar",
+            "checksum": "2ff39c84509da2004f9f1193c6ad5845f104230b9387380940bd45895567af0454cdfb47db4cd93653b1033595c4f94217f3bddd95968a18d936b31eb368dd57"
+        },
+        {
+            "filename": "Godot_v4.0-alpha2_export_templates.tpz",
+            "checksum": "f34a299b5d1775cfdc33e73cf8174137f4d6bea93a16ce257552facb7d0786b087e6f51aefa66bec546bc065f23eab75118b14e94ee5e2990f922f2c6f6ca1f5"
+        },
+        {
+            "filename": "Godot_v4.0-alpha2_linux.32.zip",
+            "checksum": "6f9541d0f5b76957a0ea21895f027e65dd7e59f5d5d690de01e64904010cad8916d57901bc8a22cc7003ec5c8f2d33087470242a47bf53c5ba83373d29c3058a"
+        },
+        {
+            "filename": "Godot_v4.0-alpha2_linux.64.zip",
+            "checksum": "6e9e90dd5c3135448fef61daf02af864d1a767dc784fc743b96f2abed8c40db6d820f7c21c36a49ed0b40e875fdd87b4009960048266334c17bb88172870a35a"
+        },
+        {
+            "filename": "Godot_v4.0-alpha2_osx.universal.zip",
+            "checksum": "66b018edeff5d9a61a028ea36e697499923839f88d4f2d37bad4ad40612e2578d6c1fbacb369166cedc9f80afc4436f099d82c032e96da60355a9810e45a6073"
+        },
+        {
+            "filename": "Godot_v4.0-alpha2_win32.exe.zip",
+            "checksum": "09234db5dce11cc49353195d08da3319b7ce999ce08f61af62b1546861a7d28d9844d52e3e18fdd1634e1892809e9a4cea44eba7d7b53da8f4d0961bc99257c2"
+        },
+        {
+            "filename": "Godot_v4.0-alpha2_win64.exe.zip",
+            "checksum": "af98f5d4d5b65d0a302a4b87f2aef4d607a605df1e6e4b7e8e2aa6f19fd7c87c46dc3500a9ba93e498758dd0484583c955216d458a9bf6a66c3b254adf17ea05"
+        }
+    ]
+}
