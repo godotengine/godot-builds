@@ -1,0 +1,50 @@
+{
+    "name": "4.0-alpha11",
+    "version": "4.0",
+    "status": "alpha11",
+    "release_date": 1656662104,
+    "git_reference": "afdae67cc381bb340da2e864279da6b836804b7f",
+
+    "files": [
+        {
+            "filename": "godot-4.0-alpha11.tar.xz",
+            "checksum": "c053ada36c3d75c718c5c1c1d7c4659c5428115fc376f8cae376aeee802bca11105407898c4e70d0d7c45e34b064fe9e34007bd8947a2e514d56829715368784"
+        },
+        {
+            "filename": "godot-4.0-alpha11.tar.xz.sha256",
+            "checksum": "607bd0d00c09b9c08067493d991532c5f7944c01d9f6e098ff76c24bcd35f5c9c02eb637aa1da253da0524fb49dce8e8fc697b3f7fee69c51801e97429f53f08"
+        },
+        {
+            "filename": "godot-lib.4.0.alpha11.release.aar",
+            "checksum": "f7b84a447ac3286d09c95c499f1e2110e13c784d462a01b1bf6cc252f2b5db9eeefedbc63b3c3139a19533a557891166bda88b478209bafbbc3cbeed77151b7b"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_android_editor.apk",
+            "checksum": "20ed1a2a6ad748ac81e12ddeb0cba22dd5a16fc8d448c7fbcfab24206da31ea8ec491436215bf151bc9956682409513ce39cae3f2281607518813cd28755e095"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_export_templates.tpz",
+            "checksum": "3017e4f586c8f2d70ccbee0bc0a36bb26ad84665ff68f048de8aeb64c8fc23c82e1fda6258074738e59ffab6c0f8703d0e8f16b5bf5ca172679ee881de64743a"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_linux.32.zip",
+            "checksum": "3c7a8f04efa04cf4ce77d86e4540673f7001449f83b0b1e6da1d6995ed8aee26b79a7ee8ab3cc2ca25c787a966270abfc790b2672fbc87d5eead3fe39f7dcef4"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_linux.64.zip",
+            "checksum": "8808182ddbac2238dd8cc51f58cec2a5f7ad322136f9a263829bf6766843c9b4015570cfcc954340c9f3c54abceaaf883d3ba480961137c15b592c2eadba8704"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_osx.universal.zip",
+            "checksum": "fefceff04bcdeb726c0aaa24b1df07db3d102ce733521d081367f65266a813cfcf734400a2bf5470786cd3eed2051383184cc030bf662bb097eb346723d14440"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_win32.exe.zip",
+            "checksum": "8b2aacd709f97727e1ec21e60e2c135217c28a92d162b3ef57ab4a87bb6fbbe8adbff6ad27c0060d8386de138da8e97ee75314a533263d62158970a2ee21e91e"
+        },
+        {
+            "filename": "Godot_v4.0-alpha11_win64.exe.zip",
+            "checksum": "3f6f23078cf831106d175ca52a04c1a9d7873c9b667e50afc1d7302e229050f4594d8506bc9739aa1d0bd44d7506b5647b6535313d6a5ab7347113f8f3d77834"
+        }
+    ]
+}
