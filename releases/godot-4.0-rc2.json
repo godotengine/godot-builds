@@ -1,0 +1,78 @@
+{
+    "name": "4.0-rc2",
+    "version": "4.0",
+    "status": "rc2",
+    "release_date": 1676387758,
+    "git_reference": "d2699dc7ab96fbd75faccc1f32f55baebf1d84dc",
+
+    "files": [
+        {
+            "filename": "godot-4.0-rc2.tar.xz",
+            "checksum": "5d36ca7018ed2963e92a0917a6310f787ab807f47a302f11b6c09ffd60e4e98800aef6957345feb61f49a623eb1993abf601669cd7b7511a5b1d974b129b11c3"
+        },
+        {
+            "filename": "godot-4.0-rc2.tar.xz.sha256",
+            "checksum": "d3f77493572463accfae393cb85d0b92fc53dce0d49110e2f071c0c097085e991572d28396c16331ad50d06970f760c76d6421b5b18bec7610321bc8851dcfea"
+        },
+        {
+            "filename": "godot-lib.4.0.rc2.template_release.aar",
+            "checksum": "5777619f16894be3139f8249f51f6ff85b033ece6f51f32f5412cd7cb455d7f407ccc48b1cba673455066dcb93994bdda7af73ace405e96f72bd1357beb56abe"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_android_editor.apk",
+            "checksum": "7c7cef292b23b5a06c69f71be52552f3f9db7f7ecc6cf04e1e1345d98d237be97e8280f085aa24fc341e66923c0c76902c055103ae0d77a259a541e18dc06c5a"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_export_templates.tpz",
+            "checksum": "fa3f5b97972891ed81eaebcfbb6d8786098d76d949f97de7e5076d2e327a2cfd414a0bbca784132bd823855d4badcedb2b8890c63dba2beaebe8cdabbea2bf15"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_linux.x86_32.zip",
+            "checksum": "0cbddeddae2686c373c738d7dd3d3a29e23c741fa1527770b2f56205d6bd527a9596222bafe0598d95c18934b5dc094168c36c3e256e8729a5038e07411d1888"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_linux.x86_64.zip",
+            "checksum": "e97fda1e44ed30ad14607731ad096a91da8bf803ff193466dce6493cb5acb796754455140d31b20315994f724f9dc8e7985d9901933cf8742209eb35744a6fb3"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_macos.universal.zip",
+            "checksum": "7fd987c41f41c9d28304cb255e31d65ae482d3fca3fa5aa064c7a8f4fb471b37a41bb58bc2ef814243d7349d8590843845f7a0438f05bc61fb40e5ed2ac6e0cc"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_web_editor.zip",
+            "checksum": "f6dd72a9c0f30624c8d4af949778788a987ab765967f065c8c155bd340f8774d0665f5f283f53715bd300027c11161dadd25bb88056a8036740fbd27b9b63f24"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_win32.exe.zip",
+            "checksum": "4767a2e408fd4fcb1a704e36dd7add566c41c9b803a129204d6b52f7ea0aa94a7f9ff36ecf2c4e4545fac285dd145b7308c82ad6f679c2c4349ce040c98eb872"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_win64.exe.zip",
+            "checksum": "5e84908a90ed493d6bdc50ba275c6af16f05dac449dceb3e167bb79d6e29086a1e0ca4f1f94ac105cbe1fa75eb2ce5f78779020f08f9d6d4dfe7c68d5b100886"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_mono_export_templates.tpz",
+            "checksum": "985058bb1dfed39a86c4ead346c2087f4c021f3cc3b167c24709e4d38016cd14ec0efb53e7f56573f468f5714f4b312a5c13fb0aff11b7c5f91093e973c6027f"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_mono_linux_x86_32.zip",
+            "checksum": "ac31662e2da23b8d49bfd787cf62d6876929a2a9c7a5e54023b116aeb3caff9b4bcc3c0b5fd110ab8a21323ead3eb55d7005d3ad4c01ad102d7a7f2c59f0deb7"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_mono_linux_x86_64.zip",
+            "checksum": "59bb3a035178c89a04d6b010a4fb6dbe8a1977ebe4716f354e3efa36459dc44d6f5fa45831d32402e87a6dec2e6e0aa012df1d33ffe4039599e2ddcaafc2527c"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_mono_macos.universal.zip",
+            "checksum": "5be83b222df435060385e2f290033f88628dcfb2b10fe8709cd642cf75f5aeff11181622bc3c146e2bc815fbaf4a4052a5367d68788112a6e437445f5951ab8f"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_mono_win32.zip",
+            "checksum": "1735c65720b0859aaadc9cc176048f38d28eacb9397d64a7c74a2101df379e7161b68e4a845f6b14f0f4d00f82c72a7b02283bffa129e75ea186ac3026db003a"
+        },
+        {
+            "filename": "Godot_v4.0-rc2_mono_win64.zip",
+            "checksum": "6ed6ccc65a693f579a80b3ad397eddb022fabb801f6e11935f86c55a213de00a5a588ad99355a5d461a5d7fcd7b3f10a35d8568768dc56e1f167c3b735cdd503"
+        }
+    ]
+}
