@@ -1,0 +1,78 @@
+{
+    "name": "4.0-rc4",
+    "version": "4.0",
+    "status": "rc4",
+    "release_date": 1677176969,
+    "git_reference": "e0de3573f3fc86062763152f5a1ac62f5a986da3",
+
+    "files": [
+        {
+            "filename": "godot-4.0-rc4.tar.xz",
+            "checksum": "38ce413a7287678460ac7156b3859db2d80e308f3c89ce57d23d62632570fb5640a896d92ebf11157da9d26c2ef9f3f571cea051b25ecd95ad8092e05d2eff9d"
+        },
+        {
+            "filename": "godot-4.0-rc4.tar.xz.sha256",
+            "checksum": "c1755512748f8b9a099cac4251deb8e9cfb9a43ebbe8f6a1c78fe1a15a8ed39e9000a9402557935979bef7fd7ac661f71c6de104c00a6015bffc8a131ead31d0"
+        },
+        {
+            "filename": "godot-lib.4.0.rc4.template_release.aar",
+            "checksum": "579e5892f9094940467bf8e9af2f836b8aa6eefe23e0623fc975f214ebdf927fe5f5f7abec85b06abd6f2789e0dd007a49b2f4ffda675b308b2e1d7cd20c20e1"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_android_editor.apk",
+            "checksum": "b25b439acfc7bab34f07175dd89a8930d645ba46a9e0f0a032934721aeb836c78101f30e2956b702b22695978c941537660e736261671e53ab2dc36499e2b689"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_export_templates.tpz",
+            "checksum": "38237389250fff33cd9a785865643e1b8e6c37ce2f0aea0e882f32aca2788817650b9ce5ad855d69670b64976df00a880b17a0abad9d06ae28353a404765c9e0"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_linux.x86_32.zip",
+            "checksum": "52f54a37b38ceebe78c82406efd99fbe78bd2da87068229d4184ebb07acd601198049f198c47f6b0ae6605444be60d93f03a97566f9f263949f92bd1b5a23401"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_linux.x86_64.zip",
+            "checksum": "c4072cf64f37bed7dc51bd0a320aa11d6e08667c101cb2f91116ee55b33861a94f1f70bff724047fef58c05315485053e47525671921a74686ea62e02fb5ec0e"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_macos.universal.zip",
+            "checksum": "810686cc22ed167ef5916fe85029db2df3df6683ab14a46f77d52e26d21e5e05fe58e4483dcb1ea4b962866116d67868ebb71a3a6926f261a0afeae4ed2daeca"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_web_editor.zip",
+            "checksum": "64d35ca3f92c7640856aa8d661ecb16489639f827cd231a887d324800427e955e5c073fd642716809bcdd6812ae0de1685b85581f72171cc27353a6cbff20bea"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_win32.exe.zip",
+            "checksum": "473093d2aaf908ba2752c53a21c8b9e2e5e5be6b4eb891571be261624af22a91ba871973e5a0c83355e09e524aa87d48cd71b399fa3592a3d3584dbd51127412"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_win64.exe.zip",
+            "checksum": "2094fc7f4e4907f11d75eefa27131daa93be6cba1817cb79fe079fa74f23be1456c1380ede4125c7a993925c2403aa52910dadc9efd50623674f72fc8a39b38f"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_mono_export_templates.tpz",
+            "checksum": "e830cadb56f64bd2d6dcb790d15cd340b2ebcb04d1347ef25ec2e371bd88c3041428323dab27cce175b02ebf4c35b2118b7108973b5d2314ee58e6c163b77b39"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_mono_linux_x86_32.zip",
+            "checksum": "8b3217fced3e80344ca79fff1b4cf644e71b9e5b3a811c9d44a9e7b5a01aabf5c7307eaee25ec751876ac46490267de2acdae325eda1f942657f37d6a8af500a"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_mono_linux_x86_64.zip",
+            "checksum": "ec0ba926c9c1fadce6816cf8a2a8d2e71ce79e34763ba18ed3d166632b58645ac6179791b150fde97a9e64baa1ae77ee69127e8a9d799dc7bccadd0472f8912d"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_mono_macos.universal.zip",
+            "checksum": "fa137b51569730fb2c780ec4f94071e9ef4d9439cf04b412d9b490ffab50259261d3f640b7f83f3eee078b8741b123b8881f047174785736f431fede82f187e0"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_mono_win32.zip",
+            "checksum": "9de9cb998ab2530103b890bf6c5386c6683af0f2ea4c7c175b1e0e3e836f7345bca3f82c6120e77f9f31274f576c25d0fa9af89d93ddd029692099ceb1fdbc74"
+        },
+        {
+            "filename": "Godot_v4.0-rc4_mono_win64.zip",
+            "checksum": "fc30f67abbbb546b356f372afd99175ac83bb04947bf0b2c40d76a5ae7d18dcce84c24eed9519037a1a7422d7537cf70422aa9f91552447cee22a70adef34caf"
+        }
+    ]
+}
