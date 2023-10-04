@@ -8,7 +8,7 @@
 ### in the linked repository. Make sure to use gh to configure
 ### the default repository for this project's folder.
 ###
-### Generated release notes are available in temp/notes for examination.
+### Generated release notes are available in tmp/notes for examination.
 
 
 import json
@@ -55,7 +55,6 @@ def generate_notes(release_data):
     version_description = ""
 
     if version_status == "stable":
-        version_bits = version_version.split(".")
         if version_flavor == "major":
             version_description = "a major release introducing new features and considerable changes to core systems. **Major version releases contain compatibility breaking changes.**"
         elif version_flavor == "minor":
@@ -137,7 +136,7 @@ def generate_notes(release_data):
     return notes
 
 
-with open("./temp/versions.yml", "r") as f:
+with open("./tmp/versions.yml", "r") as f:
     try:
         website_versions = yaml.safe_load(f)
     except yaml.YAMLError as exc:
@@ -171,8 +170,8 @@ releases.sort(key=lambda x: x['data']['release_date'])
 # match the release date.
 
 # Create the output directory if it doesn't exist.
-if not os.path.exists("./temp/notes"):
-    os.makedirs("./temp/notes")
+if not os.path.exists("./tmp/notes"):
+    os.makedirs("./tmp/notes")
 
 for release_data in releases:
     release_tag = f"{release_data['data']['version']}-{release_data['data']['status']}"
@@ -182,7 +181,7 @@ for release_data in releases:
         prerelease_flag = "--prerelease"
 
     release_notes = generate_notes(release_data['data'])
-    release_notes_file = f"./temp/notes/release-notes-{release_tag}.txt"
+    release_notes_file = f"./tmp/notes/release-notes-{release_tag}.txt"
     with open(release_notes_file, 'w') as temp_notes:
         temp_notes.write(release_notes)
 
