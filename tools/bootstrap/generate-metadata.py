@@ -1,3 +1,14 @@
+### This script has been used to generate initial data for this repository
+### and is preserved as a reference. DO NOT USE IT.
+
+### Generate JSON metadata files for each official release of Godot.
+###
+### Files are put into a temporary folder temp/releases. To generate
+### the data we extract dates and commit hashes from releases published
+### on TuxFamily. We also extract SHA512 checksums for release files
+### where possible.
+
+
 import os
 import urllib.request
 import urllib.error

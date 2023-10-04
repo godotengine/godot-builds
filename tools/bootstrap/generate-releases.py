@@ -1,8 +1,20 @@
+### This script has been used to generate initial data for this repository
+### and is preserved as a reference. DO NOT USE IT.
+
+### Generate GitHub releases for each official Godot release.
+###
+### For each release creates a canned release summary based on
+### release's characteristics, then publishes a new GitHub release
+### in the linked repository. Make sure to use gh to configure
+### the default repository for this project's folder.
+###
+### Generated release notes are available in temp/notes for examination.
+
+
 import json
 import os
 import subprocess
 import yaml
-from datetime import datetime
 
 
 website_versions = []

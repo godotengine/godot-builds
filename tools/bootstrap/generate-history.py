@@ -1,3 +1,18 @@
+### This script has been used to generate initial data for this repository
+### and is preserved as a reference. DO NOT USE IT.
+
+### Generate commit history adding each official release in order.
+###
+### Make sure JSON metadata files are put into the releases folder.
+### Using these files this script recreates the commit history,
+### placing each release at their approximate time and date of
+### publication. Each commit is tagged with the release identity.
+###
+### Make sure you do not rebase or otherwise change the history
+### afterwards, as that destroys git tags (they remain assigned
+### to old commits).
+
+
 import json
 import os
 import subprocess
