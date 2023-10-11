@@ -3,7 +3,7 @@
 
 ### Generate JSON metadata files for each official release of Godot.
 ###
-### Files are put into a temporary folder temp/releases. To generate
+### Files are put into a temporary folder tmp/releases. To generate
 ### the data we extract dates and commit hashes from releases published
 ### on TuxFamily. We also extract SHA512 checksums for release files
 ### where possible.
@@ -107,9 +107,9 @@ def generate_file(version_name, release_name, release_status, release_url):
 
     # Open the file for writing.
 
-    output_path = f"./temp/releases/godot-{release_name}.json"
+    output_path = f"./tmp/releases/godot-{release_name}.json"
     if release_status == "stable":
-        output_path = f"./temp/releases/godot-{release_name}-stable.json"
+        output_path = f"./tmp/releases/godot-{release_name}-stable.json"
 
     with open(output_path, 'w') as f:
         # Get the commit hash / git reference.
@@ -190,8 +190,8 @@ for match in matches:
         version_names.append(subfolder_name[:-1])
 
 # Create the output directory if it doesn't exist.
-if not os.path.exists("./temp/releases"):
-    os.makedirs("./temp/releases")
+if not os.path.exists("./tmp/releases"):
+    os.makedirs("./tmp/releases")
 
 for version_name in version_names:
     version_url = url + version_name
