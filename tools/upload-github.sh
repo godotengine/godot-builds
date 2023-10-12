@@ -74,7 +74,7 @@ cd $buildsdir
 git add ./releases/godot-$release_tag.json
 git commit -m "Add Godot $release_tag"
 git tag $release_tag
-if ! git push --atomic origin release-automation $release_tag; then
+if ! git push --atomic origin main $release_tag; then
   echo "Failed to push release metadata for $release_tag to GitHub."
   exit 1
 fi
