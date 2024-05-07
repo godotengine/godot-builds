@@ -1,0 +1,110 @@
+{
+    "name": "3.6-beta5",
+    "version": "3.6",
+    "status": "beta5",
+    "release_date": 1715097072,
+    "git_reference": "2a347ab8671e51ee02299d333a9d37f7784c3e28",
+
+    "files": [
+        {
+            "filename": "godot-3.6-beta5.tar.xz",
+            "checksum": "a4cba8545c4cecb2147c1d51c86e4d00d6aad264ed7427460da2047af1cc0c06314a2110c1736e2029022de1543aa5c00d492a9f9395f68878ec213939c7c545"
+        },
+        {
+            "filename": "godot-3.6-beta5.tar.xz.sha256",
+            "checksum": "1e1daa5b16540433bafc752356974664509e9898491a95ed6bc3a8ff40d4631120983bf202212bbf111e9f1cf2266d46e77deabf26592e5c0b5a4db8eaa2fade"
+        },
+        {
+            "filename": "godot-lib.3.6.beta5.release.aar",
+            "checksum": "b3b888207a46dbda62cb7f087daec2d2f42c5e6f3a71537ee912f697598d1b1c441a453f9181de7b40153f7dfb1effa46c339be37ecbc6725932c7a82df4479e"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_android_editor.aab",
+            "checksum": "134cb496e2858e9f49737a56719b32945dfc93a308c8ee951d3fd9325a4669841bbd7c07163e16036b3c98b239175eb7a9c3e2e1d4f8cad0cc342f1e3db9a957"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_android_editor.apk",
+            "checksum": "484937cd1bbabad253f11680d6289526dcd164397cf70179d43592071163cf596e699e10ebccc42bf7675464655ae4a11ed9d5c40ac6d7ddae1afb0d2c731ba9"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_export_templates.tpz",
+            "checksum": "68bf5664cdaed108f9b6c6ef1c8cb6bfaf62b57af6d1a5c7818dffd6ad179810f3bc58c3626a11e845184cd521a58e3f2628bad7eebc6af66bd4a3038f9d0784"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_linux.arm32.zip",
+            "checksum": "f05c90460fe277e405d5bf8ea9c8d944978a424233941199bc0e48564b6bed17c28a0658cfb1a904731d107ecc7631494b18dcd1b5b6b5087802179a5fdba332"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_linux.arm64.zip",
+            "checksum": "4385d5af2d6ce4b45374cefb267ee66b33189b9df63b6b85fdb89c60581dd2368d077f0c79f8bd2a860d5095fd3dd1dbf339fc2a8b4b7c352a145d4ff78c8814"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_linux_headless.64.zip",
+            "checksum": "b1637232e32a92835acf66c458136d2b4d6324a91827ef7660b1352c4c9b35ad7ef97ac422d3fd6d3269d0e5b25e38538870e6ac7d065e63a26b100de9c762af"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_linux_server.64.zip",
+            "checksum": "228d8df437a7876279edab94cc732e219853886b73c968ddce746ddc04157c1395cef125f17f4ad60cfa777079beb812abc41bf573295d0c21728df270010cb1"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_osx.universal.zip",
+            "checksum": "248cbecfebebbaa4cc662cace4f6f3ebd022ec55ae42cb5a0a36e8cb45d6feb355ac7d417c70284ce7386d097be61277b0334df72e05982a873910bc3ab2f07e"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_web_editor.zip",
+            "checksum": "2a5ad9c42097899e519a6ba97a3e12407e5871a54cac78b0fa7fe4e8d7a08b8fc872cb9eb69225191bdf1da7484244e98a37f908d8d3f81abf902f8b5abc029f"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_win32.exe.zip",
+            "checksum": "a1d79e59c13643ebdfba79a6c5433c429408fe4c080cd92654f2d1ed3f93af946a0a812cce2bde08a683cc4c7f379d5b86eb89627036b5fe35fba0d0c82a6b1d"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_win64.exe.zip",
+            "checksum": "90c6d7b84294527bfa5ffc2bd165c7f7cdf925b1877f76197b5d25987742d62e11549303aa0bc3e46b3cc4a2424a6225b2f1ed0176a60655e809d817439ea944"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_x11.32.zip",
+            "checksum": "28b54f4193527b395d049a6de93c0bf1bd66fce9678ee6c23cfd54727d0ae1b04fa2d0f425d204d0a0f54da95526b8abb26a03ef6add1e95252e21265e82e954"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_x11.64.zip",
+            "checksum": "e10e1828290ad2c5e32d7045c11d839c40433060d39dc0038b5d3352ab13c98d6713ede7afab15cbc9b08a51693c66ded8f0c8ee48764606bc9d23d1a06bdd7d"
+        },
+        {
+            "filename": "godot-lib.3.6.beta5.mono.release.aar",
+            "checksum": "8e9739b15e12b805687e0896c5120c5ff4733d51e1e0b6ca626a6a949c684673eedd3957e7650613390c1979d7b18e4e8bd51c0293b6ac68b31bec7ee7c7a85a"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_export_templates.tpz",
+            "checksum": "dd940b715ca15c9cc07d483a554f398788b31fdf17ec31eaed25352cc1488b60d94bb6b15615bb628cc9e38836fc8f788c08b24c7e8f9d80e4a94f6f6a7a9641"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_linux_headless_64.zip",
+            "checksum": "91616040bad43cdfc36b9aa486823e6341404cb67fea7ec66b000edc346a9f7152481e98011c40f36a5e47f0b35c21c13749db42dccbe7e2a37dd01631471ad4"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_linux_server_64.zip",
+            "checksum": "9e9ed8e77c042bf01f99e5a0cfa06f252371771d980b7e07a1a202603089ca70d86280b2c1d9ab636d2ab40bed87e986c6efcfb9ecb14fbd489cb78629664d91"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_osx.universal.zip",
+            "checksum": "8cda079893ba9425acd80bb097492518fbe87180155b06215c2fb9213a723bef6c4c172c078c0d89b2cb2e00d97dda4186b4f9d3b94d72cd7afd11cfcbbcd33b"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_win32.zip",
+            "checksum": "afc7af798fd8be5bee4127b1ed605285c2a90db0e014f89ec65387938501080b8577909535e42b2bba913b9a8744361481270b3f6538c6abeff36610178080c6"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_win64.zip",
+            "checksum": "1f86b3ed6f1e6725ea21b255cc679ca658878e690e89b3714aa9b3e8474a4bf2326a96ee538545df6574e0ff87ac7296da83a16773833df5e2cb9589e1a1d3c0"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_x11_32.zip",
+            "checksum": "3557ecf36a3e928b031ebe2138f7cc6a8272f19e75bbdf81022ca593ae9cbcc8c6b539da685c592ffed9e77953b29a68bacd91843b491563b4121a8af2a9adbf"
+        },
+        {
+            "filename": "Godot_v3.6-beta5_mono_x11_64.zip",
+            "checksum": "bfefd9f1ff8f45e78073df80dc8e8f53a977c474f62f3903b1c0101424e5dbf0440a977ceca57d9f92402e0786db6d64b9f3edef69a00703883d175614f74928"
+        }
+    ]
+}
