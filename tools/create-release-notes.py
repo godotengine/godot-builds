@@ -57,12 +57,10 @@ def get_release_notes_url(version_version: str, version_status: str, version_fla
     version_sluggified = version_version.replace(".", "-")
 
     if version_status == "stable":
-        if version_flavor == "major":
-            release_notes_slug = f"major-release-godot-{version_sluggified}"
-        elif version_flavor == "minor":
-            release_notes_slug = f"feature-release-godot-{version_sluggified}"
+        if version_flavor == "major" or version_flavor == "minor":
+            return f"https://godotengine.org/release/{version_version}/"
         else:
-            release_notes_slug = f"maintenance-release-godot-{version_sluggified}"
+            return f"https://godotengine.org/article/maintenance-release-godot-{version_sluggified}/"
     else:
         if version_status.startswith("rc"):
             status_sluggified = version_status.removeprefix("rc").replace(".", "-")
@@ -80,7 +78,7 @@ def get_release_notes_url(version_version: str, version_status: str, version_fla
             status_sluggified = version_status.replace(".", "-")
             release_notes_slug = f"dev-snapshot-godot-{version_sluggified}-{status_sluggified}"
 
-    return f"https://godotengine.org/article/{release_notes_slug}/"
+        return f"https://godotengine.org/article/{release_notes_slug}/"
 
 
 def generate_notes(version_version: str, version_status: str, git_reference: str) -> None:
