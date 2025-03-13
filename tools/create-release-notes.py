@@ -132,15 +132,9 @@ def generate_notes(version_version: str, version_status: str, git_reference: str
     else:
         notes += f"- [Complete changelog](https://godotengine.github.io/godot-interactive-changelog/#{version_tag})\n"
 
-    notes += "- Download (GitHub): Expand **Assets** below\n"
+    notes += "\n----\n\n"
 
-    if version_status == "stable":
-        notes += f"- [Download (TuxFamily)](https://downloads.tuxfamily.org/godotengine/{version_version})\n"
-    else:
-        notes += f"- [Download (TuxFamily)](https://downloads.tuxfamily.org/godotengine/{version_version}/{version_status})\n"
-
-    notes += "\n"
-    notes += "*All files for this release are mirrored under **Assets** below.*\n"
+    notes += "- **Download (GitHub):** Expand **Assets** below\n"
 
     return notes
 
