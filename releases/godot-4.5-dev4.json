@@ -1,0 +1,118 @@
+{
+    "name": "4.5-dev4",
+    "version": "4.5",
+    "status": "dev4",
+    "release_date": 1747163613,
+    "git_reference": "209a446e3657e6fd736b9b7589b94cbdaad2d854",
+
+    "files": [
+        {
+            "filename": "godot-4.5-dev4.tar.xz",
+            "checksum": "f3e6ce7c93f0487718f417b679911520b4becbb84d9d28cb8d3afbd379fe0d723127dbbba55ee0f02340531ff9866bc010c7e801ab3ee0b2a2753264986e7357"
+        },
+        {
+            "filename": "godot-4.5-dev4.tar.xz.sha256",
+            "checksum": "f5e4d19e994dcc2f6dee52ec70b5fadcf1ea0dd949c22043b8416cae1066a12dfe4de023d8fc272c46973104988737c75a134dfe4c14040e0d1c8630efcd6bd3"
+        },
+        {
+            "filename": "godot-lib.4.5.dev4.template_release.aar",
+            "checksum": "03a33e4699e64151b65ad05fcd07a7ef07d6d1690e3613862decb4427021aaaa2632f2703f28dd6e8db8049fcd24c52e17e0cd04a47b636e07e3256cdda6b5c8"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_android_editor.aab",
+            "checksum": "3c41b0c98292dd49ac18a067a9cc5a305364f6839a6cfb39ef8ee30d09ca395dbe0ed2920e31a8a5ea32be366a84e709da7409cfe9637fe6973009ac0d70dd6f"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_android_editor.apk",
+            "checksum": "0341511723050b6381606efad3ecf27864643acf7597298b820f16953f0357b07a58dd19de6e313af32460803a166fb7f6684d1aec3a2199170a36f2b2250ca9"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_android_editor_horizonos.apk",
+            "checksum": "bb2d493b6e78fb5ea2424f2cd096f86c4338b1e11e77d74a4355f514c8ef39016a5c3c9d9a2569d914f2ca0cf6694265af6dba755bf6a6a8a5d7ea52b12fa8c9"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_android_editor_picoos.apk",
+            "checksum": "caf8b0ceb7e10740a3cffa338a4c511411ec060f14a589e32d9030655498f02e012f12fef3a0bca695b9df5b81c9381b54fb9704bb32696391ffc294502dbb16"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_export_templates.tpz",
+            "checksum": "6c9b304edb86d370bc21297c4155453be0b283d7de38ac25b579b05cace13a19f40e1daf214536f4816667cc59dedfcd0eb1c6418689baa3e29b3293931bd8da"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_linux.arm32.zip",
+            "checksum": "64d0a6a82d44279ec66652472120ae923b648b99e1f7f4b75ba3fde14edf22e4e17cb47131f62119b1b767ee6bf674208f600b5567adda3b9d537ef16a925719"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_linux.arm64.zip",
+            "checksum": "ca841883cea38226b45eee98ae9f14dde3b2a78acc55b4c24817e5cbc185eee437819b6a58e4fbe664394463f0edb23b324dcb5da22be6267e5184f275457f4c"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_linux.x86_32.zip",
+            "checksum": "bf3417f11845eefcf587e5443da32e07d168496b327ce656e11fcd2943bbe30167c080e6f88b54fac7e9eb0dc67db10118521242d8db15559f60718280cba405"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_linux.x86_64.zip",
+            "checksum": "ed18153d3af9c629c017981d7b4929b5006f37f3e1c8f6640b9aa3550cbc4fe3e0134f37b1193a79ddd9f72504d0e06fab382338bdb46e175e10ded4817fbc6c"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_macos.universal.zip",
+            "checksum": "e8b786f2972f3d25ba1d7fb4af97a8e80a3b250365ca8800cefb96ccd0329f21de1fba40356fa3c3dbecf5dddc074fad726a2d5d90b144925819cf68bc627552"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_web_editor.zip",
+            "checksum": "8f23edcb116c0ef557d414d7672670e52c582c75a05843dad17293301c517b8e583b1d4f8d2ff7aba1b9192dbda845759091d6d4919d67c0fabfa4352c2d1e98"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_win32.exe.zip",
+            "checksum": "c4de3b31000668da3bfd02a7e5df56a81b7fea2a7a16d5f66cb548cffb3b14b956167e23ae3f66b70332f7631b2e126ff09f4340d1653e8aa676d1ce187e75ca"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_win64.exe.zip",
+            "checksum": "7cc807bbc6743abf9a224eac9d7bf6c36168301111e06d456205eb15ebaa2cb08e1b3bc2b129b7ec4a3af44ae0dc746d49eb631b13edaf50f41c6ec80420aa0f"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_windows_arm64.exe.zip",
+            "checksum": "3303bf020f8d82c9ad7fa21ec648cf78df443e94f885c92baa416060b99e922c329006fb904cd7079e1b01e3e1a76c3b86fa2394d6a3871420e0cb8f0c8833df"
+        },
+        {
+            "filename": "godot-lib.4.5.dev4.mono.template_release.aar",
+            "checksum": "bec7e8d4d19da7f9518e493f6cd9b39a7f063c7917a88773ddbfbd6a364464c4767cab3a57984a6830f3205a1acd5289aae2b88f49cd631b0f1a5df906d4dbcf"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_export_templates.tpz",
+            "checksum": "036b787a1ccca5a4aa4f85d7fa81444ce36b13c9a87cfb4ad2c0528650e338f6b505833d29385aee4a95f8742d5c1516c32820fefa06bbfa13baa1dd93951dd7"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_linux_arm32.zip",
+            "checksum": "d601966122f4d63ea8da0b63e6df817ff0b7939d7ce4197af9e1fc023ccda4fe9be03dbd08c5f633cc055d8c1b0c4877e2782b5e1c805f8085ed56b02581101a"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_linux_arm64.zip",
+            "checksum": "367ae10c37bc1e2a1bc4b1a1544706b40d806f895636e7010844d535256551c1dd1d63a678489ac55009c22be2a0989637f1cca8f21184da1a8f52fc08985e99"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_linux_x86_32.zip",
+            "checksum": "1819309a8bd623d3910a1d589ee33b7ef5fd2899d329661acc79c67b0ada5186afe7e37dd09e75ba0e5c4a200f49ebcf2a4278dec66d92c095efc9771dd64f73"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_linux_x86_64.zip",
+            "checksum": "4fb2b5305fc9f28b11d6cc5e1a986b74ca74826cf7dc90b5f5e182521c069d47a0d92d8041a4c645bbedced4141a556fdf984045b45dbc07f958cd5c2bea8c4b"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_macos.universal.zip",
+            "checksum": "ebde5dcc0dbf520961b11342773f83459a46b9079287f4877d88688c48ea4297c090c7e3ad305cc71b9fa1fe83d0fd7577befceb2bb1bc3e6682219ebae2eb0c"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_win32.zip",
+            "checksum": "0f64f05d0ae1379f5991fa5b39755eb3906af71e9e2e91f56654eab552b1f710f190c66a0626e8d4ff833dcbea8ce809a16599d15d2e5cf2cd0aa9d3d2a4111d"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_win64.zip",
+            "checksum": "db1ff8c998b7f90a84bb434f2e9604c0324d69703734eb1a6ad4a5063da0ecd74cc0b6ef71479302c0e0cdd6a8619b6a93c87bf57cf061d1e51ff8a540f71b73"
+        },
+        {
+            "filename": "Godot_v4.5-dev4_mono_windows_arm64.zip",
+            "checksum": "47f24fab3b0d1212a3a15ffcde07fa48a330c472051b1007d6b71199820272d2a4526c4800a9e6f796e652798568db1cc8c612fdd103dc5e1df5c1705a73222d"
+        }
+    ]
+}
