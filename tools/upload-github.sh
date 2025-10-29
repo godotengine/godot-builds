@@ -31,8 +31,9 @@ fi
 godot_version=""
 godot_flavor="stable"
 godot_repository="godotengine/godot-builds"
+draft=0
 
-while getopts "v:f:r:" opt; do
+while getopts "v:f:r:d" opt; do
   case "$opt" in
   v)
     godot_version=$OPTARG
@@ -42,6 +43,9 @@ while getopts "v:f:r:" opt; do
     ;;
   r)
     godot_repository=$OPTARG
+    ;;
+  d)
+    draft=1
     ;;
   esac
 done
@@ -97,6 +101,9 @@ release_notes="$basedir/tmp/release-notes-$release_tag.txt"
 release_flag=""
 if [ $godot_flavor != "stable" ]; then
   release_flag="--prerelease"
+fi
+if [ $draft == "1" ]; then
+  release_flag+=" --draft"
 fi
 
 if ! gh release create $release_tag --verify-tag --title "$release_tag" --notes-file $release_notes $release_flag -R $godot_repository; then
