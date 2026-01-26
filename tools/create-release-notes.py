@@ -58,7 +58,7 @@ def get_release_notes_url(version_version: str, version_status: str, version_fla
 
     if version_status == "stable":
         if version_flavor == "major" or version_flavor == "minor":
-            return f"https://godotengine.org/release/{version_version}/"
+            return f"https://godotengine.org/releases/{version_version}/"
         else:
             return f"https://godotengine.org/article/maintenance-release-godot-{version_sluggified}/"
     else:
