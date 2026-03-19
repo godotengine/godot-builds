@@ -64,7 +64,7 @@
         },
         {
             "filename": "Godot_v4.7-dev1_macos.universal.zip",
-            "checksum": "64614f600d819f881fbcecde4806b0de952c4b01fb1886d34447b9df29ebab1d4aa4a7f964df004cce04ef0e1c817b567fdf2b1f92c1a324ecd7ac686fa0794c"
+            "checksum": "248c1b3f93369ec439deb5219ed4079be6caec86328f469b74d3f95ac6c8e52b14d925f22a6123cc0ba0ccf2b753f4a858d178c0326d3f02cabf9a198f7509d7"
         },
         {
             "filename": "Godot_v4.7-dev1_web_editor.zip",
@@ -108,7 +108,7 @@
         },
         {
             "filename": "Godot_v4.7-dev1_mono_macos.universal.zip",
-            "checksum": "318183dd2d5c5dcc6a0658a390effcb47abf5bd128675c031a561d1101795c07e59352ea52210e41d95a3b1d8fd394e57a9a76aad2ab0cb5d827909edb95f899"
+            "checksum": "0995d94f03aa8ab48cab88e5137ab7ffe815948a8d47584acd5f6653693465d3aa54c3911b3147f3c92c695371c11b49e761a9e302619fd99c5ed687127ffb60"
         },
         {
             "filename": "Godot_v4.7-dev1_mono_win32.zip",
