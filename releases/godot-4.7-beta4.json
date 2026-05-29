@@ -1,0 +1,142 @@
+{
+    "name": "4.7-beta4",
+    "version": "4.7",
+    "status": "beta4",
+    "release_date": 1780091275,
+    "git_reference": "dff2b9bb66a01d8c1a207531b0752405c7399124",
+
+    "files": [
+        {
+            "filename": "godot-4.7-beta4.tar.xz",
+            "checksum": "0125c3162843d38763f4b60ee48e2782729e10f9f02e98a935e29b4b461bf3a14e95a1dc991a0a225f5870f2cb0df3ba488969eab3f26bad72fd86de7077a9fa"
+        },
+        {
+            "filename": "godot-4.7-beta4.tar.xz.sha256",
+            "checksum": "4c01aa9c47e93ca25e008c52df9691bae611e8cd43c14a0acaacf33169a089821d80e864c5a0d103a4528e48cd1d87bc1c3677fbd8ac7ccf9e504f3b5cf34f12"
+        },
+        {
+            "filename": "godot-lib.4.7.beta4.template_release.aar",
+            "checksum": "798754f9e5d7de2f8f1bc357d3e15299cc7075eea628b73aa15ad7cd7926c45b26280accd99475c5c1fa9ce5e96a87f4cd578ce150733c4c78fb8272941e4a68"
+        },
+        {
+            "filename": "godot-lib.4.7.beta4.template_release.perfetto.aar",
+            "checksum": "c5db3e015a26501c238a39f0f4866f8c096c3711fbde141e1959d53937f7e578ed22af9c43572cf47c3052c9e61cd8d53624b84617cc771ebfd9f10ea5ae2396"
+        },
+        {
+            "filename": "Godot_native_debug_symbols.4.7.beta4.editor.android.zip",
+            "checksum": "01ff82ac7734143e0e5b81920ff5a7580320a6247e3abbdd0530ac1ff293a942ff7cbb7fa784751c38eca500f9ffc4f261ad2131635665558684a7b74612d55a"
+        },
+        {
+            "filename": "Godot_native_debug_symbols.4.7.beta4.template_release.android.zip",
+            "checksum": "e767ab63b439bf9f2886a7873b0c88c0388c95894239b1dc26e5bb6f0720bc168a8340d0eaab26a5382a085ce2d1349990cfdcbc687ceab8d48c03d16e5d324a"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_debug.perfetto.apk",
+            "checksum": "f4b4830dd3afd6be477eb979c2b13b1eaa355e1bcdcfdd7f5b8c98f0522c99f6f411337ebe4ce87d637c2b053fe5286b1994740d94102984461de404e36df32f"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_editor.aab",
+            "checksum": "4a04907fcf1397c27bf098ba89a40dc1de30fcc05ac53d4f119d3f745bd765c91889a7777ae4d7e1b929dc5c042fcb17ca9adb3afd43bc20843828027fe5fccb"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_editor.apk",
+            "checksum": "295333dc7d469f80ad51cba375a05d25e31687906c65fb4525b570645a19a8d523b803c642ed9e73c27b84fda8667b251b5927080a8e00319002e0e2914b5849"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_editor_horizonos.apk",
+            "checksum": "eb3d4810ce76affd85f3d335c2460a0e8527ec3c98c390735570f9ac9c9ee1107749a5f62158255bc20bae0ffb2109ffaec16fed3cff81ac2d5939cc76f00ffc"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_editor_picoos.apk",
+            "checksum": "6ab481aeef79230a20fabab8153ddbc3a0f8c78e7291bae5f95e68dd1ec9964fd501b3b2582295bb0d8edb39b0841e86f2ea86cef85119a5ffa5a194605ab3e6"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_release.perfetto.apk",
+            "checksum": "5ce27b8e3fb68aee54e3eea7016dc205e654f8b4a9dd809df45c2bfa43d093d534dcbbb1f3380fdf3b2f729314bc5b375dd407a2d52077c35b6bd8fad2d31103"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_android_source.perfetto.zip",
+            "checksum": "e515ee49435bae817995111ce5d74123eccc8df5768e46f85973e03ff53d6a0bf6fb23ae6087aaf0908d18483edfcac8604e21251c8ce4d08ee14ad52e1ced8a"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_export_templates.tpz",
+            "checksum": "d247cc906f758da7cac25d1c5f34764c1d09661820b9cfad7e411fa7e3047fbbf67b12d04fb45846a20cdf4904c3812fe33f2de5cf95bc3ed17b3f860ea33e50"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_linux.arm32.zip",
+            "checksum": "6325807a620a0ba4a6adca1470ad636b73e7043a809f513a87d3be8fe9f719347e8aad028c25c974b70fb57893c4dde895ff0135bc226a996bdc81813dcae806"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_linux.arm64.zip",
+            "checksum": "4bb6f48b8d094cae3c97dc8472ccb1752b70ac1da22749e6e629357117128b26d5497750479a67b15442559a58a86954ebac0df0299913941ae68896117bbf38"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_linux.x86_32.zip",
+            "checksum": "468c0f8a17417768814f7cd8ed37513c1db57f715b200819e82a3b95678134f49d3805e47f4323a1506369b9ee4d919b74bcf217a0abdff72631f4b0222aed30"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_linux.x86_64.zip",
+            "checksum": "b954afbe1b148f97b36316d58e0350e3e15d7402aa9b5d5c5897873730221ae76db12a260a7a554b1933e0b8cbe16f23040da61515514eebf006228b6967eaaa"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_macos.universal.zip",
+            "checksum": "9308bfa6fd86596777928fcb714ab49aa364cbeb642ff1b56836dac4be996c0f5010784a65dc63203092a3e3eb2bc40578147fbbd1d78fd2fb5d92ceb822706d"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_web_editor.zip",
+            "checksum": "4bfcd0256b6742308b7b5ca0d98f92f4b8b78217f5358223bc945d3888b8df7578639098c0688728c14c0329373e563a59baf4dc134b49262f62e468f37e3e98"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_win32.exe.zip",
+            "checksum": "29d869df9a2c6cab61fea6a41931cf32c4769ac53a65dd4c08a0d68bc4d2060d48d4b0aee9af7dd505436677ca0aac04a7dcd7416a8a3cd95de9ab8d39f993d4"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_win64.exe.zip",
+            "checksum": "a28ff1bf5ce9daae791f11a0d4c16abb7dd9a09477d746a9adcc88ef0b7277dcc97ddb85fcc96ae10d1fc9059c443aebf89f672954723de9082eb70b5a8d5409"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_windows_arm64.exe.zip",
+            "checksum": "fadc936d59f48d82a66f3273e0b41180dd4533eac84239279e137e4056cb82b6d92e88fb9f42e3a911abc09d7dd5e3d4376d8b539cff9e949945b967fef1a491"
+        },
+        {
+            "filename": "godot-lib.4.7.beta4.mono.template_release.aar",
+            "checksum": "9b8f6e29a64dd93efb0933cd67449394dbe6abe823e3216546f4c3a31b022837e5b11d01a317bdcb16a04d3de25018469ed2291edd0291b60bd91d6181b89eda"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_export_templates.tpz",
+            "checksum": "9908280b9b58d1c5af6eb56462bd344ddceede03f071f26102924f8f1b7c47e8ec3ec926a8fea4f5b5dc00a90f146c0a60bf4648d848fff52463857e5ebac003"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_linux_arm32.zip",
+            "checksum": "2e9af202f3760739a90d6f42b5a249bbc0051be9cf6c69b34e1e5f187e4657abfadabe4afe945d638a269586955a49bdb769a24bb312c386b02d0a667571b633"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_linux_arm64.zip",
+            "checksum": "d152af79c9f3d3b427a2e35df43fd5c329c55e65161a4d2cadc99ab317ba9c3649a4582e2b246ed02ae6ec0679f8a9a621f48e7c23de5375865b49a67c8fec30"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_linux_x86_32.zip",
+            "checksum": "e5a57aa0b2ad5b9ddbbf017aff59c6efbb3fd758d675d04abc5dfd9705f85a327fbcacf0b35a281194e363fbb73b3dc829c2d00548acc5c39a20654d6a9793bb"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_linux_x86_64.zip",
+            "checksum": "2f2edd71e42c7fbc06c24e895d3d027c5a10660aa1e8d6e6a72d40a50a39c46ee1706d9ad9c004beb94fb7cd59c051f92f441ec5fcfdaa034222cca368a0d7e6"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_macos.universal.zip",
+            "checksum": "e6ecba71f94a93e43b555c6739b1be3a88777fd887fddac247e6234048b9afee390fef4744c00dc72d5dd9be1295bfe68a0dbc0a0c4a03bd779731e561002687"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_win32.zip",
+            "checksum": "9ed8a943c88d457191051ba2b5d1cd15acc9710d652c8c3ed0395cb8c511d05db510387c0966f9af66ca7adf53d4a8f75026bbbab4161b35dfa670a987f15b13"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_win64.zip",
+            "checksum": "2d2948aaa990b31d7139ff3a9185efa117a7aaea743ada024039c7625e83ef3c451ca537728868ee039062104822fa56e2a478a4e0ba1a8443de0f1f5282ff4b"
+        },
+        {
+            "filename": "Godot_v4.7-beta4_mono_windows_arm64.zip",
+            "checksum": "bd12bc6d259ea70ab4fbad888456aa76babc14fce3d13f7840083df1e05f5445667484ac6e702caacff3571d53a61fd26b20e6cc37b777132dbce8fab4ca99e0"
+        }
+    ]
+}
