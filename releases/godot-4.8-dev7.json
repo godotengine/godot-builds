@@ -1,0 +1,74 @@
+{
+    "name": "4.8-dev7",
+    "version": "4.8",
+    "status": "dev7",
+    "release_date": 1790707000,
+    "git_reference": "c971f93e7e76b0ef919bf6009e7b868bea04db7f",
+
+    "files": [
+        {
+            "filename": "godot-4.8-dev7.tar.xz",
+            "checksum": "21be0452e8a0073c65b059f7f1f56cae91b0eb5989a14c08557faa4b4cc4949378cb1def8ac9e2f55604a2518274e95ae01fb39351aef9f2eb98f0925beed733"
+        },
+        {
+            "filename": "godot-4.8-dev7.tar.xz.sha256",
+            "checksum": "4cf9f09d8418195d4b4a873c498ee071ecbc9681154c600b108f2daf7e0cc14c172331fb727dfea2dbb56ef95d4ff0205d1f309318234f55d14c8970637a7261"
+        },
+        {
+            "filename": "godot-lib.4.8.dev7.template_release.aar",
+            "checksum": "55619a90c2bcefcae36e293019925a50b823c1d712fe9bf06af2bcfbdffebaa8452475f1c575a7d0a49053ed28490b6d2528339179d924d91ed1c8ea959fbb9d"
+        },
+        {
+            "filename": "godot-lib.4.8.dev7.template_release.perfetto.aar",
+            "checksum": "ad5c95f8cc67a9d893742b8e62233642e1e1f1c4490b556e6999b1a3e42f8a37b46bc5640718a9b4f79a814cbad76a818f26a167caea4a48e31b0b7f1c719329"
+        },
+        {
+            "filename": "Godot_native_debug_symbols.4.8.dev7.editor.android.zip",
+            "checksum": "5a0429f26b51d7368ec2dad3b6d7644ea3a8dd8d2aee1cef2ae9597befa4b33429b72dc0a35d8a2d8e31952ca7c6fb8bfef8b8cee1b68e8d383565c404ddb0f2"
+        },
+        {
+            "filename": "Godot_native_debug_symbols.4.8.dev7.template_release.android.zip",
+            "checksum": "c70b8f6bcafd5b3e2fea94ffbacbd81f22864ac377ee3677647436ec5a738922ef85834b82360cfb4bb8af1b1c4b94d0d793079af6768f66e3504e65ffed5d4f"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_debug.perfetto.apk",
+            "checksum": "d2eb1e2907a22c2d2ae3ce9cf122fd1ef3cbfee1b8145c9c3a80d1442dbb9f5eae1a6494ea47d157c1f6c2301bd25d6261f0ed97dbcb977e883677f7f49181c4"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_editor.aab",
+            "checksum": "8e22c497161bb25d8f9c3426f2e42c1d8da6320f3160e03bac397227d5395854df9f302e9b2a89c7e1539c79895586cfbbbc9a664b84312c054698065dc8c737"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_editor.apk",
+            "checksum": "623193fc9d3010e5dfd11c96fcf0c59f7c05be4cfa599f9d88d36200f5b1a2c520f68c704db8d36732234fe9a3f0a9af73ac5a56d8448318c52e6a42b0681dc3"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_editor_horizonos.apk",
+            "checksum": "3c304eeb32e4473235db0e38e7fdc5671573ceac0efbb01138e62d8f22dc3c9fafd3d609261be51e6ab95309b11be0b3a8e281422cbb68ff3a77ee8fe95a18e5"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_editor_picoos.apk",
+            "checksum": "721358e08c6481b16153eb3020d258549fae0d32254f05cc2f63f7a36f6f31e35f2960a86a1abbc90d7de8d6f7163a48210e12271ff7e354260eef51f9e1f73a"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_release.perfetto.apk",
+            "checksum": "096913a3a99ef13a8ce71c39f92e3c476d3c0c990f1d3c7491ff6f9ff99d258e449b67e3003ac476b6f201ccd3af959811274cdd05badc91b04d08f42ca29972"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_android_source.perfetto.zip",
+            "checksum": "601247d392eb6a72fc995e607417faf99ce5d79c93d32e8e0c7f76596f6f11752a057aa12dfb3a1b9fe21054f2ef1a5a3257d15831551ed97a80286c2618a8ea"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_export_templates.tpz",
+            "checksum": "cdb7d8bd4a489c72087937a31a2176c521a76107ac545b1ca55986e1cbf6c168ca7ec39b36ae8e897151c9434db53da93bf9a1ecd46287908ac286a9a4e94a20"
+        },
+        {
+            "filename": "godot-lib.4.8.dev7.mono.template_release.aar",
+            "checksum": "31e9ab871100cf4627c47a8e050312833b7f9dff4d5ce50f4cf22c44450a47520fc0833f92043573d62caa422042431889b4fbef5526e5f1769c821555f92892"
+        },
+        {
+            "filename": "Godot_v4.8-dev7_mono_export_templates.tpz",
+            "checksum": "6c907543268d512bf0792fb6b0505a92a09ca3814d72aa811c660f35a599bccfbe0c5cbe5ac459ec5764edfe473e70154cad7fa3685f5a00adc7289eea260f77"
+        }
+    ]
+}
