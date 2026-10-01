@@ -1,0 +1,367 @@
+#!/usr/bin/env bash
+#
+# Fake `gh` (GitHub CLI) used by the upload-github.sh tests.
+#
+# It emulates the small subset of the GitHub CLI which tools/upload-github.sh
+# relies on, and keeps its state in a plain directory so that tests can both
+# inspect it and pre-seed it. It never contacts GitHub.
+#
+# Environment:
+#   GH_STUB_STATE        Directory holding the emulated releases (required).
+#   GH_STUB_LOG          File recording every emulated call.
+#   GH_STUB_BUILDS_REPO  Git repository used to emulate `--verify-tag`.
+#
+#   GH_STUB_REPO_API_ERROR=1     Make `gh api repos/...` fail (not with a 404).
+#   GH_STUB_RELEASE_API_ERROR=1  Make `gh api .../releases/tags/...` fail (not with a 404).
+#   GH_STUB_FAIL_UPLOAD=<glob>   Make `gh release upload` fail for matching asset names.
+#   GH_STUB_BROKEN_UPLOAD=<glob> Record a truncated asset and fail, like an
+#                                interrupted upload which left a partial asset.
+#   GH_STUB_RELEASE_TAG=<tag>    tag_name recorded when creating a release.
+#   GH_STUB_FAIL_RELEASE_CREATE=1  Make `gh release create` fail.
+#
+# The `gh _stub ...` commands are test helpers which are not logged as calls.
+
+set -uo pipefail
+
+state_dir="${GH_STUB_STATE:-}"
+if [ -z "$state_dir" ]; then
+  echo "gh stub: GH_STUB_STATE is not set" >&2
+  exit 64
+fi
+
+export GH_STUB_STATE="$state_dir"
+log_file="${GH_STUB_LOG:-$state_dir/calls.log}"
+builds_repo="${GH_STUB_BUILDS_REPO:-}"
+
+mkdir -p "$state_dir/releases" "$(dirname "$log_file")"
+
+log_call() {
+  printf '%s\n' "$*" >> "$log_file"
+}
+
+release_dir() {
+  printf '%s/releases/%s' "$state_dir" "$1"
+}
+
+release_file() {
+  printf '%s/releases/%s/release.json' "$state_dir" "$1"
+}
+
+create_release() {
+  local tag="$1"
+  local draft="$2"
+  local prerelease="$3"
+
+  mkdir -p "$(release_dir "$tag")"
+  printf '{"id": 1, "tag_name": "%s", "draft": %s, "prerelease": %s, "assets": []}\n' \
+    "${GH_STUB_RELEASE_TAG:-$tag}" "$draft" "$prerelease" > "$(release_file "$tag")"
+}
+
+release_assets() {
+  local tag="$1"
+  python3 - "$tag" <<'PYEOF'
+import json
+import os
+import sys
+
+state_dir = os.environ["GH_STUB_STATE"]
+tag = sys.argv[1]
+path = os.path.join(state_dir, "releases", tag, "release.json")
+
+try:
+    with open(path, "r", encoding="utf-8") as release_file:
+        release = json.load(release_file)
+except (OSError, ValueError):
+    sys.exit(1)
+
+for asset in release.get("assets") or []:
+    print("%s\t%s" % (asset.get("name", ""), asset.get("size", "")))
+PYEOF
+}
+
+add_asset() {
+  local tag="$1"
+  local name="$2"
+  local size="$3"
+
+  python3 - "$tag" "$name" "$size" <<'PYEOF'
+import json
+import os
+import sys
+
+state_dir = os.environ["GH_STUB_STATE"]
+tag, name, size = sys.argv[1], sys.argv[2], sys.argv[3]
+path = os.path.join(state_dir, "releases", tag, "release.json")
+
+with open(path, "r", encoding="utf-8") as release_file:
+    release = json.load(release_file)
+
+release.setdefault("assets", []).append({"name": name, "size": int(size)})
+
+with open(path, "w", encoding="utf-8") as release_file:
+    json.dump(release, release_file)
+PYEOF
+}
+
+asset_size() {
+  local tag="$1"
+  local name="$2"
+
+  release_assets "$tag" | awk -F'\t' -v asset_name="$name" '$1 == asset_name { print $2; exit }'
+}
+
+remote_has_tag() {
+  local tag="$1"
+
+  [ -n "$builds_repo" ] || return 1
+  [ -n "$(git -C "$builds_repo" ls-remote --tags --refs origin "refs/tags/${tag}" 2> /dev/null)" ]
+}
+
+# `gh release create <tag> [flags]`
+stub_release_create() {
+  local tag=""
+  local notes_file=""
+  local verify_tag=0
+  local flags=""
+
+  while [ "$#" -gt 0 ]; do
+    case "$1" in
+    --verify-tag)
+      verify_tag=1
+      shift
+      ;;
+    --title)
+      shift 2
+      ;;
+    --notes-file)
+      notes_file="$2"
+      shift 2
+      ;;
+    --prerelease)
+      flags="$flags --prerelease"
+      shift
+      ;;
+    --draft)
+      flags="$flags --draft"
+      shift
+      ;;
+    -R)
+      shift 2
+      ;;
+    -*)
+      shift
+      ;;
+    *)
+      if [ -z "$tag" ]; then
+        tag="$1"
+      fi
+      shift
+      ;;
+    esac
+  done
+
+  log_call "release create ${tag}${flags}"
+
+  if [ -z "$tag" ]; then
+    echo "gh: no release tag given" >&2
+    exit 1
+  fi
+
+  if [ -n "${GH_STUB_FAIL_RELEASE_CREATE:-}" ]; then
+    echo "gh: failed to create release ${tag} (HTTP 502)" >&2
+    exit 1
+  fi
+
+  if [ -n "$notes_file" ] && [ ! -s "$notes_file" ]; then
+    echo "gh: release notes file '${notes_file}' is missing or empty" >&2
+    exit 1
+  fi
+
+  if [ "$verify_tag" = "1" ] && ! remote_has_tag "$tag"; then
+    echo "gh: tag ${tag} not found on the remote (HTTP 422)" >&2
+    exit 1
+  fi
+
+  if [ -f "$(release_file "$tag")" ]; then
+    echo "gh: release ${tag} already exists (HTTP 422)" >&2
+    exit 1
+  fi
+
+  local draft="false"
+  local prerelease="false"
+  case "$flags" in
+  *--draft*) draft="true" ;;
+  esac
+  case "$flags" in
+  *--prerelease*) prerelease="true" ;;
+  esac
+
+  create_release "$tag" "$draft" "$prerelease"
+  echo "https://github.com/stub.test/releases/tag/${tag}"
+}
+
+# `gh release upload <tag> <file> -R <repo>`
+stub_release_upload() {
+  local tag=""
+  local file=""
+
+  while [ "$#" -gt 0 ]; do
+    case "$1" in
+    -R)
+      shift 2
+      ;;
+    -*)
+      shift
+      ;;
+    *)
+      if [ -z "$tag" ]; then
+        tag="$1"
+      elif [ -z "$file" ]; then
+        file="$1"
+      fi
+      shift
+      ;;
+    esac
+  done
+
+  if [ -z "$tag" ] || [ -z "$file" ]; then
+    echo "gh: usage: gh release upload <tag> <file>" >&2
+    exit 1
+  fi
+
+  local name
+  name=$(basename "$file")
+  log_call "release upload ${tag} ${name}"
+
+  if [ ! -f "$(release_file "$tag")" ]; then
+    echo "gh: release ${tag} not found (HTTP 404)" >&2
+    exit 1
+  fi
+
+  if [ ! -f "$file" ]; then
+    echo "gh: '${file}' does not exist" >&2
+    exit 1
+  fi
+
+  local size
+  size=$(wc -c < "$file" | tr -d '[:space:]')
+
+  if [ -n "$(asset_size "$tag" "$name")" ]; then
+    echo "gh: asset ${name} already exists in release ${tag} (HTTP 422)" >&2
+    exit 1
+  fi
+
+  # shellcheck disable=SC2053 # the stub uses the value as a glob pattern.
+  if [ -n "${GH_STUB_FAIL_UPLOAD:-}" ] && [[ "$name" == $GH_STUB_FAIL_UPLOAD ]]; then
+    echo "gh: failed to upload ${name} (HTTP 502)" >&2
+    exit 1
+  fi
+
+  # shellcheck disable=SC2053 # the stub uses the value as a glob pattern.
+  if [ -n "${GH_STUB_BROKEN_UPLOAD:-}" ] && [[ "$name" == $GH_STUB_BROKEN_UPLOAD ]]; then
+    # Leave a truncated asset behind, like an interrupted upload would.
+    add_asset "$tag" "$name" "$((size > 8 ? size - 4 : 1))"
+    echo "gh: connection reset while uploading ${name}" >&2
+    exit 1
+  fi
+
+  add_asset "$tag" "$name" "$size"
+  echo "Uploaded ${name}"
+}
+
+# `gh api <endpoint>`
+stub_api() {
+  local endpoint="$1"
+
+  case "$endpoint" in
+  repos/*/releases/tags/*)
+    local tag="${endpoint##*/releases/tags/}"
+    log_call "api releases/tags/${tag}"
+
+    if [ -n "${GH_STUB_RELEASE_API_ERROR:-}" ]; then
+      echo "gh: Server Error (HTTP 502)" >&2
+      exit 1
+    fi
+
+    if [ -f "$(release_file "$tag")" ]; then
+      cat "$(release_file "$tag")"
+      exit 0
+    fi
+
+    echo "gh: Not Found (HTTP 404)" >&2
+    exit 1
+    ;;
+  repos/*/*)
+    local repository="${endpoint#repos/}"
+    log_call "api repos/${repository}"
+
+    if [ -n "${GH_STUB_REPO_API_ERROR:-}" ]; then
+      echo "gh: Server Error (HTTP 503)" >&2
+      exit 1
+    fi
+
+    printf '{"full_name": "%s", "name": "%s"}\n' "$repository" "${repository##*/}"
+    ;;
+  *)
+    echo "gh stub: unsupported endpoint '${endpoint}'" >&2
+    exit 1
+    ;;
+  esac
+}
+
+# `gh _stub ...`: test setup helpers, deliberately not logged.
+stub_internal() {
+  local action="$1"
+  shift
+
+  case "$action" in
+  create-release)
+    create_release "$1" "${2:-false}" "${3:-false}"
+    ;;
+  add-asset)
+    add_asset "$1" "$2" "$3"
+    ;;
+  list-assets)
+    release_assets "$1"
+    ;;
+  has-release)
+    [ -f "$(release_file "$1")" ]
+    ;;
+  *)
+    echo "gh stub: unsupported internal command '${action}'" >&2
+    exit 1
+    ;;
+  esac
+}
+
+case "${1:-}" in
+api)
+  shift
+  stub_api "$@"
+  ;;
+release)
+  shift
+  case "${1:-}" in
+  create)
+    shift
+    stub_release_create "$@"
+    ;;
+  upload)
+    shift
+    stub_release_upload "$@"
+    ;;
+  *)
+    echo "gh stub: unsupported command 'gh release ${1:-}'" >&2
+    exit 1
+    ;;
+  esac
+  ;;
+_stub)
+  shift
+  stub_internal "$@"
+  ;;
+*)
+  echo "gh stub: unsupported command '${1:-}'" >&2
+  exit 1
+  ;;
+esac
